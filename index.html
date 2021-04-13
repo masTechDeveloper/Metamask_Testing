@@ -15,7 +15,15 @@
 
 
     const initialize = () => {
-        getAccount();
+
+        if (typeof window.ethereum !== 'undefined') {
+            alert('MetaMask is installed!');
+            getAccount();
+        } else {
+            alert("Error!")
+        }
+
+
     };
     window.addEventListener('DOMContentLoaded', initialize);
 
