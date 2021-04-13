@@ -12,6 +12,14 @@
     <h2>Account: <span class="showAccount"></span></h2>
 </body>
 <script>
+
+
+    const initialize = () => {
+        getAccount();
+    };
+    window.addEventListener('DOMContentLoaded', initialize);
+
+
     const ethereumButton = document.querySelector('.enableEthereumButton');
     const showAccount = document.querySelector('.showAccount');
 
